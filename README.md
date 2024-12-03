@@ -88,25 +88,29 @@ python tcp_ping.py <hostname/IP> [-p PORT] [-c COUNT] [-i INTERVAL] [-t TIMEOUT]
 ### Sample Output
 
 ```
-TCP ping to google.com:80
-Resolved IPs: 142.250.72.78, 2404:6800:4008:c07::67
-Sending 4 TCP ping probes to each IP
+python main.py google.com -p 443 -c 10
 
-[10:15:20.123] Connected to 142.250.72.78: time=45.32ms
-[10:15:20.124] Connected to 2404:6800:4008:c07::67: time=45.67ms
-...
+TCP ping to google.com:443
+Resolved IPs: 142.250.199.78
+Sending 10 TCP ping probes to each IP
+
+[00:30:30.476] Connected to 142.250.199.78: time=4.44ms
+[00:30:31.486] Connected to 142.250.199.78: time=5.66ms
+[00:30:32.497] Connected to 142.250.199.78: time=5.21ms
+[00:30:33.508] Connected to 142.250.199.78: time=7.24ms
+[00:30:34.520] Connected to 142.250.199.78: time=5.26ms
+[00:30:35.531] Connected to 142.250.199.78: time=17.12ms
+[00:30:36.551] Connected to 142.250.199.78: time=22.33ms
+[00:30:37.576] Connected to 142.250.199.78: time=8.40ms
+[00:30:38.590] Connected to 142.250.199.78: time=11.49ms
+[00:30:39.603] Connected to 142.250.199.78: time=29.71ms
 
 === TCP ping statistics per IP ===
 
-IP: 142.250.72.78
-Sent: 4, Successful: 4, Failed: 0 (0.0% loss)
-RTT min/avg/max/mdev = 45.32/46.21/47.11/0.54 ms
-Percentiles (p50/p90/p99) = 46.15/47.01/47.11 ms
-
-IP: 2404:6800:4008:c07::67
-Sent: 4, Successful: 4, Failed: 0 (0.0% loss)
-RTT min/avg/max/mdev = 45.67/46.54/47.43/0.58 ms
-Percentiles (p50/p90/p99) = 46.48/47.33/47.43 ms
+IP: 142.250.199.78
+Sent: 10, Successful: 10, Failed: 0 (0.0% loss)
+RTT min/avg/max/mdev = 4.44/11.69/29.71/8.63 ms
+Percentiles (p50/p90/p99) = 7.82/23.07/29.05 ms
 ```
 
 ## Requirements
