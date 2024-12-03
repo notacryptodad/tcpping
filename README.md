@@ -23,33 +23,22 @@ This tool performs TCP ping operations to test connectivity and measure latency 
 
 1.  Clone the repository:
     
-    Copy
-    
     ```
     git clone https://github.com/yourusername/tcp-ping.git
     cd tcp-ping
-    
     ```
     
 2.  Create a virtual environment (recommended):
     
-    Copy
-    
     ```
     python -m venv venv
     source venv/bin/activate  # On Windows: venv\Scripts\activate
-    
     ```
     
 3.  Install dependencies:
     
-    basic
-    
-    Copy
-    
     ```
     pip install -r requirements.txt
-    
     ```
     
 
@@ -57,15 +46,8 @@ This tool performs TCP ping operations to test connectivity and measure latency 
 
 ### Basic Command Format
 
-scheme
-
-Copy
-
-```
 ```
 python tcp_ping.py <hostname/IP> [-p PORT] [-c COUNT] [-i INTERVAL] [-t TIMEOUT]
-```
-
 ```
 
 ### Arguments
@@ -80,48 +62,31 @@ python tcp_ping.py <hostname/IP> [-p PORT] [-c COUNT] [-i INTERVAL] [-t TIMEOUT]
 
 1.  Basic ping to a hostname:
     
-    Copy
-    
     ```
     python tcp_ping.py google.com
-    
     ```
     
 2.  Ping specific port:
     
-    Copy
-    
     ```
     python tcp_ping.py google.com -p 443
-    
     ```
     
 3.  Increase number of pings:
     
-    Copy
-    
     ```
     python tcp_ping.py google.com -c 10
-    
     ```
     
 4.  Change interval and timeout:
     
-    Copy
-    
     ```
     python tcp_ping.py google.com -i 0.5 -t 1.0
-    
     ```
     
 
 ### Sample Output
 
-gradle
-
-Copy
-
-```
 ```
 TCP ping to google.com:80
 Resolved IPs: 142.250.72.78, 2404:6800:4008:c07::67
@@ -144,16 +109,14 @@ RTT min/avg/max/mdev = 45.67/46.54/47.43/0.58 ms
 Percentiles (p50/p90/p99) = 46.48/47.33/47.43 ms
 ```
 
-```
-
 ## Requirements
 
--   Python 3.6 or higher
+-   Python 3.10 or higher
 -   Dependencies listed in requirements.txt
 
 ## License
 
-MIT License
+Apache License
 
 ## Contributing
 
